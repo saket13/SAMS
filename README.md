@@ -1,13 +1,14 @@
 # SAMS
-A Desktop GUI for Smart Attendance Management System Using Realtime Face Recognition System
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 ![Py2app](https://img.shields.io/pypi/pyversions/py2app)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-[![made-with-bash](https://img.shields.io/badge/Made%20with-Bash-1f425f.svg)](https://www.gnu.org/software/bash/)
-[![GitHub license](https://img.shields.io/github/license/saket13/iBatteryStats)](https://github.com/saket13/iBatteryStats/blob/master/LICENSE)
+[![Generic badge](https://img.shields.io/badge/<Uses>-<OpenCV>-<COLOR>.svg)](https://opencv.org)
+[![GitHub license](https://img.shields.io/github/license/saket13/SAMS)](https://github.com/saket13/SAMS/blob/master/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-I use macOS X(10.14.5) Mojave and Apple removed the option to show the battery time remaining in the statusbar since the macOS X(10.12.2) release. So I made this my own little thing- its far from being perfect but hey, it works! ..
+A Desktop GUI for Smart Attendance Management System Using Realtime Face Recognition System
+
 
 ## Screenshots
 
