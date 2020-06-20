@@ -12,13 +12,13 @@ A Desktop GUI for Smart Attendance Management System Using Realtime Face Recogni
 
 ## Screenshots
 
-**Charging & Discharging:**
+**Adding New Student:**
 
 | [![Charging](Charging.png)]  |  [![Discharging](Discharging.png)] |
 |:---:|:---:|
 | CHARGING | DISCHARGING |
 
-**Low Battery Notification:**
+**Take Attendance:**
 
 ![Notification](Notification.png)
 
