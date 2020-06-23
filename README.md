@@ -14,6 +14,12 @@ A Desktop GUI for Smart Attendance Management System Using Realtime Face Recogni
 
 **Adding New Student:**
 
+**Take Attendance:**
+
+| [![LIVE-STREAM](LIVE-STREAM.png)]  |  [![GUI](sams.png)] |
+|:---:|:---:|
+| TAKE ATTENDANCE | GUI |
+
 | [![Add-1](ADD-1.png)]  |  [![ADD-2](ADD-2.png)] |
 |:---:|:---:|
 | ADD-1 | ADD-2 |
@@ -22,15 +28,30 @@ A Desktop GUI for Smart Attendance Management System Using Realtime Face Recogni
 |:---:|:---:|
 | ADD-3 | ADD-4 |
 
-**Take Attendance:**
-
-<img src="LIVE-STREAM.png" width="50%" height="50%">
-
 ## Design
 
-This Apple Menu bar application has two parts - a bash script that runs as a cron job and dumps battery stats to log file, and a Python script that processes the log file to generate cumulative statistics like Charge Left, Status, Time Left, Cycles and Temperature etc and the Python script has been converted to a Status bar app using Rumps.
+![](FINAL_GUI.png)
 
-I've also modified the Python script that is being run to alert you (via Rumps Desktop Notification Feature) of 'Charge Your Mac' in the last 15 and 10 mins remaining.
+
+This project has 2 modules:
+
+First One, 'Add Student' module which adds a new student to the system. The image is taken through the WebCam. Image's Binary Data is sent from
+             the GUI FrontEnd architecture through the local server
+             to the BackEnd architecture which is responsible for saving the file in the ‘.jpeg’ format in the local directory (assets)
+             where the application is residing. Then all the images are loaded one by one from the assets folder and then
+             their 128-d face encodings are determined through the OpenCV library of Python.
+
+Second One, 'Take Attendance' module is mainly responsible for fulfilling the objectives of the
+            project i.e it receives the images from the webcam’s live server and then faces are detected using the
+            different inbuilt algorithms of OpenCV and their 128-d encodings are then computed and the computed
+            face encodings are then compared to the encodings stored in the Data Base which yields the student who-
+            se face is obtained. And then the excel sheet is updated accordingly to the required Roll Number of the
+            Identified Face.
+            
+Finally, both these modules have been merged together and and packages into an executable
+            application using the Python’s Eel Library which is executable cross-platform i.e UNIX, LINUX and
+            WINDOWS if the requirements are installed correctly and their paths are specified correctly. This final
+            system can also be used in the web browsers.
 
 ## Installation
 
