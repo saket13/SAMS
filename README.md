@@ -36,11 +36,11 @@ Finally, both these modules have been merged together and and packages into an e
 
 ## Screenshots
 
-**Take Attendance:**
+**GUI:**
 
-| ![LIVE-STREAM](LIVE-STREAM.png) |  ![GUI](sams.png) |
-|:---:|:---:|
-| TAKE ATTENDANCE | GUI |
+| ![GUI](sams.png) |
+|:--:|
+| GUI |
 
 **Adding New Student:**
 
@@ -51,6 +51,13 @@ Finally, both these modules have been merged together and and packages into an e
 | ![Add-3](ADD-3.png)  |  ![ADD-4](ADD-4.png) |
 |:---:|:---:|
 | ADD-3 | ADD-4 |
+
+**Adding New Student:**
+
+| ![LIVE-STREAM](LIVE-STREAM.png)  |  ![EXCEL](EXCEL.png) |
+|:---:|:---:|
+| TAKE-ATTENDANCE | EXCEL SHEET |
+
 
 ## Installation
 
