@@ -9,6 +9,32 @@
 
 A Desktop GUI for Smart Attendance Management System Using Realtime Face Recognition System
 
+
+## Screenshots
+
+**GUI:**
+
+| ![GUI](sams.png) |
+|:--:|
+| GUI |
+
+**Adding New Student:**
+
+| ![Add-1](ADD-1.png)  |  ![ADD-2](ADD-2.png) |
+|:---:|:---:|
+| ADD-1 | ADD-2 |
+
+| ![Add-3](ADD-3.png)  |  ![ADD-4](ADD-4.png) |
+|:---:|:---:|
+| ADD-3 | ADD-4 |
+
+**Updating Student:**
+
+| ![LIVE-STREAM](LIVE-STREAM.png)  |  ![EXCEL](EXCEL.png) |
+|:---:|:---:|
+| TAKE-ATTENDANCE | EXCEL SHEET |
+
+
 ## Design
 
 <img src="FLOW.png" align="right" height="400" width="600" >
@@ -34,77 +60,45 @@ Finally, both these modules have been merged together and and packages into an e
             system can also be used in the web browsers.
 
 
-## Screenshots
-
-**GUI:**
-
-| ![GUI](sams.png) |
-|:--:|
-| GUI |
-
-**Adding New Student:**
-
-| ![Add-1](ADD-1.png)  |  ![ADD-2](ADD-2.png) |
-|:---:|:---:|
-| ADD-1 | ADD-2 |
-
-| ![Add-3](ADD-3.png)  |  ![ADD-4](ADD-4.png) |
-|:---:|:---:|
-| ADD-3 | ADD-4 |
-
-**Adding New Student:**
-
-| ![LIVE-STREAM](LIVE-STREAM.png)  |  ![EXCEL](EXCEL.png) |
-|:---:|:---:|
-| TAKE-ATTENDANCE | EXCEL SHEET |
-
-
 ## Installation
 
-Clone the repo and install Rumps
+Clone the repo and install Requirements :
 
 ```bash
-git clone https://github.com/saket13/iBatteryStats 
-sudo chmod +x path_to_iBatteryStats/iBatteryStats/battery.sh
-sudo -H pip3 install rumps
-
+git clone https://github.com/saket13/SAMS
+cd path_to_SAMS
+pip3 install requirements.txt
 ```
 
-Add this line to your cron tab (`crontab -e`):
+Modify attendance.py File and put your Project File's path:
 
-     SHELL= /bin/bash   
-     */1 * * * * /bin/bash/ path_to_iBatteryStats/iBatteryStats/battery.sh > path_to_iBatteryStats/iBatteryStats/back.log 2>&1
-     # Here in crontab entry 1st argument says script is called every minute and second argument specifies where the script is and third where the log file is 
-
-Modify your python script to fetch values:
-
-```python
-#Enter the absolute address of the file here and leave everything as it is
-log_file_path = 'path_to_iBatteryStats/iBatteryStats/back.log'
-
+```bash
+DIRECTORY_PATH = '/Users/saket/Downloads/SAMS/'                             # Put here the PROJECT DIRECTORY PATH
+IMAGE_DIRECTORY_PATH = '/Users/saket/Downloads/SAMS/assets/'                # Put here the ASSESTS FOLDER PATH
 ```
 
 ## Usage
 
-You can simply do:
+Run code in root mode(OpenCV requires it):
 
 ```python
-nohup python3 path_to_iBatteryStats/iBatteryStats/battery.py &
-
+python3 attendance.py (In Web Browser Mode)
 ```
-or to open the Application with no opening of terminal and on a single click
+
+After registering new students
 
 ```bash
-#Modify the content of app_shell to ::
-
-#!/bin/sh
-nohup python3 path_to_iBatteryStats/iBatteryStats/battery.py &
-
-# And give it full permission ::
-
-sudo chmod +x path_to_iBatteryStats/iBatteryStats/app_shell
-
+Press CTRL + C to stop and 
+run python3 attendance.py again to train new faces
 ```
+
+For taking attendance 
+
+```bash
+Run code in root mode and
+Click On 'Take Attendance' Button 
+```
+
 ## Future Ideas and TODOs
 
 * Deploy it on Cloud completely - AWS, Azure or GCP
