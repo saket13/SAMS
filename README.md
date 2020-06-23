@@ -9,29 +9,9 @@
 
 A Desktop GUI for Smart Attendance Management System Using Realtime Face Recognition System
 
-
-## Screenshots
-
-**Adding New Student:**
-
-**Take Attendance:**
-
-| ![LIVE-STREAM](LIVE-STREAM.png) |  ![GUI](sams.png) |
-|:---:|:---:|
-| TAKE ATTENDANCE | GUI |
-
-| ![Add-1](ADD-1.png)  |  ![ADD-2](ADD-2.png) |
-|:---:|:---:|
-| ADD-1 | ADD-2 |
-
-| ![Add-3](ADD-3.png)  |  ![ADD-4](ADD-4.png) |
-|:---:|:---:|
-| ADD-3 | ADD-4 |
-
 ## Design
 
-![](FINAL_GUI.png)
-
+<img src="FLOW.png" align="right" height="400" width="600" >
 
 This project has 2 modules:
 
@@ -52,6 +32,25 @@ Finally, both these modules have been merged together and and packages into an e
             application using the Python’s Eel Library which is executable cross-platform i.e UNIX, LINUX and
             WINDOWS if the requirements are installed correctly and their paths are specified correctly. This final
             system can also be used in the web browsers.
+
+
+## Screenshots
+
+**Take Attendance:**
+
+| ![LIVE-STREAM](LIVE-STREAM.png) |  ![GUI](sams.png) |
+|:---:|:---:|
+| TAKE ATTENDANCE | GUI |
+
+**Adding New Student:**
+
+| ![Add-1](ADD-1.png)  |  ![ADD-2](ADD-2.png) |
+|:---:|:---:|
+| ADD-1 | ADD-2 |
+
+| ![Add-3](ADD-3.png)  |  ![ADD-4](ADD-4.png) |
+|:---:|:---:|
+| ADD-3 | ADD-4 |
 
 ## Installation
 
@@ -101,12 +100,11 @@ sudo chmod +x path_to_iBatteryStats/iBatteryStats/app_shell
 ```
 ## Future Ideas and TODOs
 
-* Use `bokeh` to chart out the data?
+* Deploy it on Cloud completely - AWS, Azure or GCP
 
-* Handle every second stats and update it .
-    * For now it is working every minute.
+* The images must be upright and single face only. Add Options for sideways too.
 
-* Make this, the data dumping cron job and a battery status menu bar app indicator all a part of a single big application?
+* Make a dashboard for admin
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
