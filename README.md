@@ -24,7 +24,7 @@ A Desktop GUI for Smart Attendance Management System Using Realtime Face Recogni
 
 **Take Attendance:**
 
-![Attendance](LIVE-STREAM.png)
+<img src="LIVE-STREAM.png" width="50%" height="50%">
 
 ## Design
 
