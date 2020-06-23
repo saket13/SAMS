@@ -16,15 +16,15 @@ A Desktop GUI for Smart Attendance Management System Using Realtime Face Recogni
 
 **Take Attendance:**
 
-| [![LIVE-STREAM](LIVE-STREAM.png)]  |  [![GUI](sams.png)] |
+| ![LIVE-STREAM](LIVE-STREAM.png) |  ![GUI](sams.png) |
 |:---:|:---:|
 | TAKE ATTENDANCE | GUI |
 
-| [![Add-1](ADD-1.png)]  |  [![ADD-2](ADD-2.png)] |
+| ![Add-1](ADD-1.png)  |  ![ADD-2](ADD-2.png) |
 |:---:|:---:|
 | ADD-1 | ADD-2 |
 
-| [![Add-3](ADD-3.png)]  |  [![ADD-4](ADD-4.png)] |
+| ![Add-3](ADD-3.png)  |  ![ADD-4](ADD-4.png) |
 |:---:|:---:|
 | ADD-3 | ADD-4 |
 
