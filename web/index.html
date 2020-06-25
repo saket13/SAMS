@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SAMS portal</title>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js"></script>
+    
+    
+</head>
+
+<body>
+    <section class="wellcome_area clearfix" id="home">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 col-md">
+                    <div class="wellcome-heading">
+                        <h2>Smart Attendance Management System</h2>
+                        <h3>SAMS</h3>
+                        
+                    </div>
+                    <div class="get-start-area2">
+                        <form class="form-inline">
+                            <p>Start the realtime face recognition stream</p>
+                            <input type="button" class="submit" value="Take Attendance" onclick="start_stream()">
+                            <div id="my_camera"></div>
+                        </form>
+                    </div>
+                    <p>Add a new student here !!</p>
+                    
+                    <!-- Configure a few settings and attach camera -->
+	                <script language="JavaScript">
+		                Webcam.set({
+			                width: 320,
+			                height: 240,
+			                image_format: 'jpeg',
+			                jpeg_quality: 100
+		                });
+	                </script>
+                    
+                    <div class="get-start-area">
+                        <form class="form-inline">
+                            <input type="text"   id="rollno" class="form-control email" placeholder="Enter Roll No">
+                            <input type="button" class="submit" value="Open Web-Cam" id="btPic" onclick="setup();"> 
+                            <input type="button" class="submit" value="Take Picture" onclick="take_snapshot()" >  
+                            <input type="button" class="submit" value="Add Student" onclick="add_student()">  
+                            <div id="results"><p>Your captured image will appear here...</p></div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="welcome-thumb">
+            <img id="qr" src="" width="60%">
+        </div>
+    </section>
+</body>
+
+<!-- Code to handle taking the snapshot and displaying it locally -->
+<script language="JavaScript">
+
+    function start_stream() {
+        eel.take_attendance();
+    }
+
+    function setup() {
+        Webcam.reset();
+        Webcam.attach( '#my_camera' );
+    }
+    
+    function take_snapshot() {
+        // take snapshot and get image data
+        Webcam.snap( function(data_uri) {
+            // display results in page
+            document.getElementById('results').innerHTML = 
+                '<p>Here is your image:</p>' + 
+                '<img src="'+data_uri+'"/>';
+            data = data_uri;
+            eel.get_image_data(data);
+        });
+        // console.log(data);
+    }
+
+    function add_student() {
+        // Get the value of the roll no
+        var roll_number = document.getElementById("rollno").value;
+        eel.save_student_data(roll_number);   
+        // console.log(roll_number);
+        Webcam.reset();
+    }
+</script>
+
+
+
+
+</html>
