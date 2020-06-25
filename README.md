@@ -4,7 +4,7 @@
 ![Py2app](https://img.shields.io/pypi/pyversions/py2app)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![Generic badge](https://img.shields.io/badge/<Uses>-<OpenCV>-<COLOR>.svg)](https://opencv.org)
-[![GitHub license](https://img.shields.io/github/license/saket13/SAMS)](https://github.com/saket13/SAMS/blob/master/LICENSE)
+<a href="https://github.com/saket13/SAMS/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/saket13/SAMS"></a>
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 A Desktop GUI for Smart Attendance Management System Using Realtime Face Recognition System
