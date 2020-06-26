@@ -28,7 +28,7 @@ A Desktop GUI for Smart Attendance Management System Using Realtime Face Recogni
 |:---:|:---:|
 | ADD-3 | ADD-4 |
 
-**Updating Student:**
+**Updating Student's Attendance :**
 
 | ![LIVE-STREAM](LIVE-STREAM.png)  |  ![EXCEL](EXCEL.png) |
 |:---:|:---:|
