@@ -14,9 +14,9 @@ A Desktop GUI for Smart Attendance Management System Using Realtime Face Recogni
 
 **GUI:**
 
-| ![GUI](SAMS.png) |
-|:--:|
-| GUI |
+<p align="center">
+<img src="SAMS.png" align="centre" height="500" width="500" >
+</p>
 
 **Adding New Student:**
 
@@ -59,6 +59,16 @@ Finally, both these modules have been merged together and and packages into an e
             WINDOWS if the requirements are installed correctly and their paths are specified correctly. This final
             system can also be used in the web browsers.
 
+## Package Structure
+    
+    SAMS App                  # Root Package (ZIP Format)
+    .
+    ├── Contains              
+    │   ├── Assets            # Images of the new students a/c to roll no captured for training
+    │   ├── Web               # All the front end files
+    │   └── attendance.py     # Python code for establishing server and doing OpenCV work
+    |   └── requirements.txt  # Requirements file
+    |______________________   
 
 ## Installation
 
@@ -112,6 +122,33 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+## Contact
+If you need any help, you can connect with me.
+
+Visit:- [saketsaumya.info](https://saketsaumya.info)
+
 ## License
 
-* MIT
+```
+MIT License
+
+Copyright (c) 2020 Saket Saumya
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
