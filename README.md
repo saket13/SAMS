@@ -14,7 +14,7 @@ A Desktop GUI for Smart Attendance Management System Using Realtime Face Recogni
 
 **GUI:**
 
-| ![GUI](sams.png) |
+| ![GUI](SAMS.png) |
 |:--:|
 | GUI |
 
